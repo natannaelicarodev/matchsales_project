@@ -226,7 +226,7 @@ O React Query foi escolhido para gerenciar o estado servidor devido às suas cap
 ### Arquitetura de Componentes
 
 **Estratégia:**
-Adotamos uma arquitetura baseada em composição, onde componentes menores e focados são combinados para formar interfaces complexas. Isso facilita manutenção e reutilização.
+Adotei uma arquitetura baseada em composição, onde componentes menores e focados são combinados para formar interfaces complexas. Isso facilita manutenção e reutilização.
 
 **Padrões Utilizados:**
 - Compound Components para formulários complexos
@@ -287,28 +287,6 @@ O comando gera uma build otimizada na pasta `dist/` com:
 - Cache HTTP adequado para assets
 - Prefetch de dados críticos
 - Debounce em operações de busca
-
-## 🔮 Próximos Passos
-
-### Melhorias Futuras
-
-**Funcionalidades:**
-- Paginação para grandes volumes de dados
-- Filtros avançados (por empresa, cidade, etc.)
-- Exportação de dados (CSV, PDF)
-- Histórico de alterações de usuários
-
-**Técnicas:**
-- Implementação de testes unitários com Vitest
-- Testes E2E com Playwright
-- Storybook para documentação de componentes
-- CI/CD com GitHub Actions
-
-**Performance:**
-- Virtual scrolling para listas grandes
-- Service Worker para cache offline
-- Otimização de imagens com next/image
-- Análise de bundle com Bundle Analyzer
 
 ## 👨‍💻 Processo de Desenvolvimento
 
