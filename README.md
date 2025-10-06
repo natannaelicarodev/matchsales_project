@@ -215,7 +215,7 @@ src/
 ### Escolha do React Query
 
 **Motivação:**
-O React Query foi escolhido para gerenciar o estado servidor devido às suas capacidades avançadas de cache, sincronização automática e gerenciamento de estados de loading/erro. Isso elimina a necessidade de Redux para este caso de uso específico.
+React Query para gerenciar o estado servidor devido às suas capacidades avançadas de cache, sincronização automática e gerenciamento de estados de loading/erro. Isso elimina a necessidade de Redux para este caso de uso específico.
 
 **Benefícios Implementados:**
 - Cache automático com invalidação inteligente
@@ -248,7 +248,7 @@ Zod foi integrado com React Hook Form através do resolver oficial, permitindo v
 ### Build de Produção
 
 ```bash
-pnpm run build
+npm run build
 ```
 
 O comando gera uma build otimizada na pasta `dist/` com:
@@ -256,37 +256,6 @@ O comando gera uma build otimizada na pasta `dist/` com:
 - Tree-shaking para remoção de código não utilizado
 - Otimização de assets e imagens
 - Chunking automático para melhor cache
-
-### Recomendações de Deploy
-
-**Plataformas Sugeridas:**
-- **Vercel** (recomendado) - Deploy automático via Git
-- **Netlify** - Excelente para SPAs
-- **GitHub Pages** - Para projetos open source
-
-**Configurações Necessárias:**
-- Redirecionamento de rotas para `index.html` (SPA)
-- Headers de cache para assets estáticos
-- Compressão gzip/brotli habilitada
-
-## 📊 Métricas de Performance
-
-### Otimizações Implementadas
-
-**Bundle Size:**
-- Code splitting por rotas
-- Lazy loading de componentes pesados
-- Tree-shaking automático do Vite
-
-**Runtime Performance:**
-- Memoização de componentes com React.memo
-- useMemo para cálculos custosos
-- useCallback para funções estáveis
-
-**Network Optimization:**
-- Cache HTTP adequado para assets
-- Prefetch de dados críticos
-- Debounce em operações de busca
 
 ## 👨‍💻 Processo de Desenvolvimento
 
@@ -300,18 +269,6 @@ O desenvolvimento seguiu uma abordagem iterativa, priorizando funcionalidades co
 3. **Funcionalidades Core** - CRUD de usuários
 4. **Melhorias UX** - Validações, feedback e micro-interações
 5. **Features Extras** - Dashboard, temas e otimizações
-
-### Commits Semânticos
-
-O projeto utiliza Conventional Commits para padronização:
-
-```
-feat: adiciona funcionalidade de edição de usuários
-fix: corrige validação de email no formulário
-docs: atualiza README com instruções de deploy
-style: melhora responsividade dos cards de usuário
-refactor: extrai lógica de validação para hook customizado
-```
 
 ## 📝 Conclusão
 
